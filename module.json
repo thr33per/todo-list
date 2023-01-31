@@ -1,0 +1,28 @@
+{
+  "id": "todo-list",
+  "name": "my-todo-list",
+  "title": "To Don't",
+  "description": "A simple module which adds a user specific to do list.",
+  "esmodules": [],
+  "scripts": ["scripts/todo-list.js"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "styles": ["styles/todo-list.css"],
+  "system": ["pf2e"],
+  "authors": [
+    {
+      "name": "You!",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.8.8",
+  "url": "",
+  "download": ""
+}
