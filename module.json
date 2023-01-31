@@ -18,11 +18,11 @@
     {
       "name": "You!",
       "email": "",
-      "url": ""
+      "url": "https://github.com/thr33per"
     }
   ],
   "version": "1.0.0",
   "minimumCoreVersion": "0.8.8",
-  "url": "",
-  "download": ""
+  "url": "https://github.com/thr33per/todo-list",
+  "download": "https://github.com/thr33per/todo-list/archive/refs/heads/main.zip"
 }
