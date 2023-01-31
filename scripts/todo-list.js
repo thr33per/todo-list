@@ -117,4 +117,9 @@ Hooks.on("renderPlayerList", (playerlist, html) => {
       <i class='fas fa-tasks'></i>
     </button>`
   );
+
+  // register listener
+  html.on("click", ".todo-list-icon-button", (event) => {
+    console.log("TodoList | Button clicked!");
+  });
 });
