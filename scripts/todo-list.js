@@ -105,13 +105,16 @@ Hooks.once("devModeReaday", ({ registerPackageDebugFlag }) => {
   registerPackageDebugFlag(TodoList.ID);
 });
 
-const tooltip = game.i18n.localize("TODO-LIST.button-title");
-
 Hooks.on("renderPlayerList", (playerlist, html) => {
   // find the element which has our logged in user's id
   const loggedInUserListItem = html.find(`[data-user-id="${game.userId}"]`);
+
+  // create localized tooltip
+  const tooltip = game.i18n.localize("TODO-LIST.button-title");
   // insert a button at the end of blah blah blah
   loggedInUserListItem.append(
-    "<button type='button' class='todo-list-icon-button' title='${tooltip}'><i class='fas fa-tasks'></i></button>"
+    `<button type='button' class='todo-list-icon-button flex0' title="${tooltip}">
+      <i class='fas fa-tasks'></i>
+    </button>`
   );
 });
