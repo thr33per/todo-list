@@ -105,8 +105,9 @@ Hooks.once("devModeReaday", ({ registerPackageDebugFlag }) => {
   registerPackageDebugFlag(TodoList.ID);
 });
 
+const tooltip = game.i18n.localize("TODO-LIST.button-title");
+
 Hooks.on("renderPlayerList", (playerlist, html) => {
-  const tooltip = game.i18n.localize("TODO-LIST.button-title");
   // find the element which has our logged in user's id
   const loggedInUserListItem = html.find(`[data-user-id="${game.userId}"]`);
   // insert a button at the end of blah blah blah
